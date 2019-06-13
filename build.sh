@@ -5,12 +5,6 @@
 # Before running this script!
 # See https://forum.poa.network/t/manual-blockscout-deployment/2458
 
-# Parameter
-# $1 = database username
-# $2 = user password
-# $3 = database host (ex. localhost)
-# $4 = database name
-
 echo "Removing front end built files..."
 remove -r apps/block_scout_web/priv/static
 
@@ -20,7 +14,7 @@ mix do deps.get, local.rebar --force, deps.compile, compile
 
 # Database drop
 echo "Dropping databases..."
-mix do ecto.drop, ecto.create, ecto.migrate
+mix do ecto.drop
 
 # Database create
 echo "Creating database..."
@@ -35,7 +29,5 @@ SECRET_KEY=$(mix phx.gen.secret)
 
 echo "*** THIS MIGHT BE IMPORTANT!!! STORED phx.gen.secret=>secret.key"
 echo $SECRET_KEY > secret.key
-
-export DATABASE_URL="postgresql://$1:$2@$3/$4"
 
 MIX_ENV=prod mix release --env=prod
