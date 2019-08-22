@@ -24,5 +24,6 @@ export POOL_SIZE=20
 export ECTO_USE_SSL="true"
 export HEART_COMMAND="./run.sh"
 export FIRST_BLOCK=0
+export COINMARKETCAP_PAGES=19
 
 MIX_ENV=prod mix phx.server
