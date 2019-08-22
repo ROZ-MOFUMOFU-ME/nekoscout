@@ -1835,3 +1835,24 @@ msgstr ""
 #: lib/block_scout_web/templates/transaction_log/_logs.html.eex:53
 msgid "Type"
 msgstr ""
+
+#, elixir-format
+#: lib/block_scout_web/templates/address/index.html.eex:22
+msgid " (page"
+msgstr ""
+
+#, elixir-format
+#: lib/block_scout_web/templates/address/index.html.eex:19
+msgid " addresses of"
+msgstr ""
+
+#, elixir-format
+#: lib/block_scout_web/templates/address/index.html.eex:11
+#: lib/block_scout_web/templates/address/index.html.eex:41
+msgid "Back"
+msgstr ""
+
+#, elixir-format
+#: lib/block_scout_web/templates/address/index.html.eex:17
+msgid "Showing "
+msgstr ""

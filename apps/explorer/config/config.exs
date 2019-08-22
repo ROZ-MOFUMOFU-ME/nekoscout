@@ -29,6 +29,8 @@ config :explorer, Explorer.Counters.AverageBlockTime,
 
 config :explorer, Explorer.Chain.Cache.BlockNumber, enabled: true
 
+config :explorer, Explorer.Chain.BlockNumberCache, enabled: true
+
 config :explorer, Explorer.ExchangeRates.Source.CoinMarketCap,
   pages: String.to_integer(System.get_env("COINMARKETCAP_PAGES") || "10")
 

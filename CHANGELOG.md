@@ -325,7 +325,6 @@
 
 - [#1892](https://github.com/poanetwork/blockscout/pull/1892) - Remove temporary worker modules
 
-
 ## 1.3.13-beta
 
 ### Features
@@ -338,11 +337,9 @@
 - [#1881](https://github.com/poanetwork/blockscout/pull/1881) - fix: store solc versions locally for performance
 - [#1898](https://github.com/poanetwork/blockscout/pull/1898) - check if the constructor has arguments before verifying constructor arguments
 
-
 ## 1.3.12-beta
 
 Reverting of synchronous block counter, implemented in #1848
-
 
 ## 1.3.11-beta
 
